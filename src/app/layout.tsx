@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Header } from "@/app/components/Header";
+import { Header } from "@/src/app/components/Header";
 
 export default function RootLayout({
   children,
@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return ( 
     <html lang="pt-BR">
-      <body className="min-h-screen">
+      <body className="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
         <Header />
         <main className="max-w-4xl mx-auto p-4">
           {children}
